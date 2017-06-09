@@ -26,7 +26,7 @@ class DB:
     conn = None
 
     def connect(self):
-        self.conn = MySQLdb.connect(host='s1.gongyan.me', port=3306, user='rec', passwd='gogo1357A*', db='db2', charset="utf8")
+        self.conn = MySQLdb.connect(host='****', port=3306, user='****', passwd='****', db='db2', charset="utf8")
         self.conn.autocommit(1)  # 设置事务自动提交，置0则显示地开启事务
 
     def query(self, sql):  # 超时则一直重连直到重新连上
